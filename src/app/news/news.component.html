@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-2">
+    <ul class="list-group">
+      <a class="list-group-item list-group-item-action" [routerLink]="['latest']" [routerLinkActive]="['active']">Latest</a>
+      <a class="list-group-item list-group-item-action" [routerLink]="['upcoming']" [routerLinkActive]="['active']">Upcoming</a>
+    </ul>    
+  </div>
+  <div class="col-md-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>

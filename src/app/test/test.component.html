@@ -1,0 +1,19 @@
+<!-- <h1>I am test component</h1>
+<div [@myAnimation]='currentstate' (click)="animateMe()">Click to animate</div>
+
+<app-child [dates]="dates"></app-child> -->
+
+<app-projection [header]="'Some title'">
+    <h1 class="body">Some title</h1>
+    <span class="footer">Sample footer</span>
+</app-projection>
+
+<app-projection [header]="'Some title'">
+    <form class="body">
+        <app-date-viewer></app-date-viewer>
+        <app-date-viewer></app-date-viewer>
+        <app-date-viewer></app-date-viewer>
+        <input type="text" class="form-control" ngbTooltip="This field is required" placeholder="Enter name" [value]="name">
+    </form>
+    <span class="footer" style="font-weight:bold">Different footer</span>
+</app-projection>
